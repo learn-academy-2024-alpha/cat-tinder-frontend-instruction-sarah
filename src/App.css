@@ -3,6 +3,15 @@
   font-size: 16pt;
   margin: 0;
 }
+.gochi-hand-regular {
+  font-family: "Gochi Hand", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+.page-body {
+  text-align: center;
+  margin: 2rem;
+}
 
 /* ---FOOTER--- */
 footer {
@@ -28,4 +37,18 @@ footer {
 }
 .nav-link {
   color: #60477c !important;
+}
+
+/* ---HOME--- */
+.home-title {
+  font-size: 7rem;
+}
+.home-hero-images {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.home-hero-image {
+  width: 20rem;
+  margin: 1rem;
 }
