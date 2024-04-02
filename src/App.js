@@ -1,25 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react"
+import { Routes, Route } from "react-router-dom"
+import Header from "./components/Header"
+import Footer from "./components/Footer"
+import CatEdit from "./pages/CatEdit"
+import CatIndex from "./pages/CatIndex"
+import CatNew from "./pages/CatNew"
+import CatShow from "./pages/CatShow"
+import Home from "./pages/Home"
+import NotFound from "./pages/NotFound"
+import "./App.css"
+import mockCats from "./mockCats"
 
-function App() {
+const App = () => {
+  const [cats, setCats] = useState(mockCats)
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+      <Header />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="cat-index" element={<CatIndex />} />
+        <Route path="cat-show" element={<CatShow />} />
+        <Route path="cat-new" element={<CatNew />} />
+        <Route path="cat-edit" element={<CatEdit />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
+      <Footer />
+    </>
+  )
 }
 
-export default App;
+export default App

@@ -1,38 +1,54 @@
-.App {
+/* ---GENERAL STYLES--- */
+* {
+  font-size: 16pt;
+  margin: 0;
+}
+.gochi-hand-regular {
+  font-family: "Gochi Hand", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+.page-body {
   text-align: center;
+  margin: 2rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* ---FOOTER--- */
+footer {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: space-between;
+  margin: 1rem;
+}
+.cat-logo-small {
+  width: 4rem;
+}
+
+/* ---HEADER--- */
+.cat-tinder-logo {
+  width: 7rem;
+}
+.header-nav-links {
+  display: flex;
+  margin-top: 2rem;
+}
+.nav {
+  justify-content: space-between;
+  margin: 1rem !important;
+}
+.nav-link {
+  color: #60477c !important;
+}
+
+/* ---HOME--- */
+.home-title {
+  font-size: 7rem;
+}
+.home-hero-images {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-wrap: wrap;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.home-hero-image {
+  width: 20rem;
+  margin: 1rem;
 }
