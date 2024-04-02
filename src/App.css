@@ -4,6 +4,16 @@
   margin: 0;
 }
 
+/* ---FOOTER--- */
+footer {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem;
+}
+.cat-logo-small {
+  width: 4rem;
+}
+
 /* ---HEADER--- */
 .cat-tinder-logo {
   width: 7rem;
