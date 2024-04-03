@@ -1,5 +1,6 @@
 import React from "react"
 import { Card, CardBody, CardTitle, Button } from "reactstrap"
+import { Link } from "react-router-dom"
 
 const CatIndex = ({ cats }) => {
   return (
@@ -17,7 +18,9 @@ const CatIndex = ({ cats }) => {
               <img alt={`profile of ${cat.name}`} src={cat.image} />
               <CardBody>
                 <CardTitle tag="h5">{cat.name}</CardTitle>
-                <Button>See More Info</Button>
+                <Link to={`/cat-show/${cat.id}`}>
+                  <Button>See More Info</Button>
+                </Link>
               </CardBody>
             </Card>
           )

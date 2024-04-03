@@ -80,3 +80,8 @@ footer {
 .not-found-title {
   font-size: 5rem;
 }
+
+/* ---SHOW--- */
+.show-cat-profile {
+  width: 20rem;
+}
