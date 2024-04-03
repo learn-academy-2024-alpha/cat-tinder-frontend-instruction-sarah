@@ -65,7 +65,23 @@ footer {
   width: 20rem;
 }
 
+/* ---INDEX--- */
+.card {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.index-cat-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
 /* ---NOT FOUND--- */
 .not-found-title {
   font-size: 5rem;
+}
+
+/* ---SHOW--- */
+.show-cat-profile {
+  width: 20rem;
 }

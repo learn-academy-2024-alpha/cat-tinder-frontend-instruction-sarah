@@ -18,8 +18,8 @@ const App = () => {
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="cat-index" element={<CatIndex />} />
-        <Route path="cat-show" element={<CatShow />} />
+        <Route path="cat-index" element={<CatIndex cats={cats} />} />
+        <Route path="cat-show/:id" element={<CatShow cats={cats} />} />
         <Route path="cat-new" element={<CatNew />} />
         <Route path="cat-edit" element={<CatEdit />} />
         <Route path="*" element={<NotFound />} />
