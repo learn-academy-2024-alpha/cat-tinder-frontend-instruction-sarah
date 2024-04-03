@@ -8,6 +8,10 @@
   font-weight: 400;
   font-style: normal;
 }
+.hero-image {
+  margin: 1rem;
+  width: 20rem;
+}
 .montserrat-body-font {
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
@@ -17,6 +21,19 @@
 .page-body {
   text-align: center;
   margin-bottom: 7rem;
+}
+.page-title {
+  font-size: 4rem;
+}
+
+/* ---BUTTON--- */
+.nav-button {
+  background-color: #60477c;
+  color: white;
+  border-radius: 20px;
+  padding: 10px 25px;
+  font-size: x-large;
+  margin: 1rem;
 }
 
 /* ---FOOTER--- */
@@ -60,25 +77,27 @@ footer {
   flex-wrap: wrap;
   justify-content: center;
 }
-.home-hero-image {
-  margin: 1rem;
-  width: 20rem;
-}
 
 /* ---INDEX--- */
 .card {
   text-align: center;
   margin-bottom: 2rem;
+  width: 14rem;
+  box-shadow: 1px 1px #d7d1de;
 }
 .index-cat-cards {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
 }
+.index-profile-image-container {
+  max-height: 300px;
+  overflow: hidden;
+  border-radius: 1%;
+}
 
-/* ---NOT FOUND--- */
-.not-found-title {
-  font-size: 5rem;
+.index-profile-image {
+  height: 400px;
 }
 
 /* ---SHOW--- */
