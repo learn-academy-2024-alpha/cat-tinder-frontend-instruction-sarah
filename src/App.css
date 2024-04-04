@@ -3,10 +3,13 @@
   font-size: 16pt;
   margin: 0;
 }
+.centering-content {
+  text-align: center;
+}
 .gochi-hand-regular {
   font-family: "Gochi Hand", cursive;
-  font-weight: 400;
   font-style: normal;
+  font-weight: 400;
 }
 .hero-image {
   margin: 1rem;
@@ -15,12 +18,12 @@
 .montserrat-body-font {
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 400;
   font-style: normal;
+  font-weight: 400;
 }
 .page-body {
-  text-align: center;
   margin-bottom: 7rem;
+  text-align: center;
 }
 .page-title {
   font-size: 4rem;
@@ -29,23 +32,23 @@
 /* ---BUTTON--- */
 .nav-button {
   background-color: #60477c;
-  color: white;
   border-radius: 20px;
-  padding: 10px 25px;
+  color: white;
   font-size: x-large;
   margin: 1rem;
+  padding: 10px 25px;
 }
 
 /* ---FOOTER--- */
+.cat-logo-small {
+  width: 4rem;
+}
 footer {
   background-color: white;
   bottom: 0;
   padding: 10px;
   position: fixed;
   width: 100%;
-}
-.cat-logo-small {
-  width: 4rem;
 }
 .footer-content {
   display: flex;
@@ -54,8 +57,8 @@ footer {
 
 /* ---HEADER--- */
 .cat-tinder-logo {
-  width: 7rem;
   margin: 1rem;
+  width: 7rem;
 }
 .header-nav-links {
   display: flex;
@@ -69,35 +72,43 @@ footer {
 }
 
 /* ---HOME--- */
-.home-title {
-  font-size: 7rem;
-}
 .home-hero-images {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
+.home-title {
+  font-size: 7rem;
+}
 
 /* ---INDEX--- */
 .card {
-  text-align: center;
-  margin-bottom: 2rem;
-  width: 14rem;
   box-shadow: 1px 1px #d7d1de;
+  margin-bottom: 2rem;
+  text-align: center;
+  width: 14rem;
 }
 .index-cat-cards {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
 }
-.index-profile-image-container {
-  max-height: 300px;
-  overflow: hidden;
-  border-radius: 1%;
-}
-
 .index-profile-image {
   height: 400px;
+}
+.index-profile-image-container {
+  border-radius: 1%;
+  max-height: 300px;
+  overflow: hidden;
+}
+
+/* ---NEW--- */
+.form-validations {
+  color: red;
+}
+.new-page-body {
+  margin: 0 5rem;
+  margin-bottom: 7rem;
 }
 
 /* ---SHOW--- */
