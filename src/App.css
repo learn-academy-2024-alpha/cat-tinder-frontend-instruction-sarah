@@ -95,9 +95,17 @@ footer {
   overflow: hidden;
   border-radius: 1%;
 }
-
 .index-profile-image {
   height: 400px;
+}
+
+/* ---NEW--- */
+.new-page-body {
+  margin-bottom: 7rem;
+  margin: 0 5rem;
+}
+.centering-content {
+  text-align: center;
 }
 
 /* ---SHOW--- */
