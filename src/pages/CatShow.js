@@ -1,10 +1,15 @@
 import React from "react"
-import { useParams } from "react-router-dom"
+import { useParams, useNavigate } from "react-router-dom"
 import NavButton from "../components/NavButton"
 
-const CatShow = ({ cats }) => {
+const CatShow = ({ cats, deleteCat }) => {
+  const navigate = useNavigate()
   const { id } = useParams()
   const cat = cats.find((catObject) => catObject.id === +id)
+  const handleDeleteCat = () => {
+    deleteCat(cat.id)
+    navigate("/cat-index")
+  }
   return (
     <div className="page-body">
       <div>
@@ -20,6 +25,16 @@ const CatShow = ({ cats }) => {
         />
       </div>
       <NavButton url="/cat-index" buttonContent="Back to All the Cats" />
+      <NavButton
+        url={`/cat-edit/${cat.id}`}
+        buttonContent={`Edit ${cat.name}`}
+      />
+      <button
+        onClick={() => handleDeleteCat(cat.id)}
+        className="nav-button gochi-hand-regular"
+      >
+        Delete {cat.name}
+      </button>
     </div>
   )
 }
