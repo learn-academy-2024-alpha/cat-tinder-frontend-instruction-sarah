@@ -1,5 +1,5 @@
 import React from "react"
-import { Form, FormGroup, Label, Button, Row, Col } from "reactstrap"
+import { Col, Form, FormGroup, Label, Row } from "reactstrap"
 import { useForm } from "react-hook-form"
 import { useNavigate } from "react-router-dom"
 
@@ -34,7 +34,9 @@ const CatNew = ({ createNewCat }) => {
                 className="form-control"
                 {...register("name", { required: true })}
               />
-              {errors.name && <span>Name is required</span>}
+              {errors.name && (
+                <span className="form-validations">Name is required</span>
+              )}
             </FormGroup>
           </Col>
           <Col md={6}>
@@ -49,7 +51,9 @@ const CatNew = ({ createNewCat }) => {
                 className="form-control"
                 {...register("age", { required: true })}
               />
-              {errors.age && <span>Age is required</span>}
+              {errors.age && (
+                <span className="form-validations">Age is required</span>
+              )}
             </FormGroup>
           </Col>
         </Row>
@@ -63,7 +67,9 @@ const CatNew = ({ createNewCat }) => {
             className="form-control"
             {...register("enjoys", { required: true })}
           />
-          {errors.enjoys && <span>Enjoys is required</span>}
+          {errors.enjoys && (
+            <span className="form-validations">Enjoys is required</span>
+          )}
         </FormGroup>
         <FormGroup>
           <Label for="image">Image URL</Label>
@@ -75,12 +81,17 @@ const CatNew = ({ createNewCat }) => {
             className="form-control"
             {...register("image", { required: true })}
           />
-          {errors.image && <span>Image is required</span>}
+          {errors.image && (
+            <span className="form-validations">Image is required</span>
+          )}
         </FormGroup>
         <div className="centering-content">
-          <Button onClick={handleSubmit} type="submit">
+          <button
+            onClick={handleSubmit}
+            className="nav-button gochi-hand-regular"
+          >
             Submit
-          </Button>
+          </button>
         </div>
       </Form>
     </div>
