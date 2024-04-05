@@ -28,6 +28,7 @@ const App = () => {
       alert("Ooops something went wrong:", error.message)
     }
   }
+
   const createNewCat = async (newCat) => {
     try {
       const postResponse = await fetch("http://localhost:3000/cats", {
@@ -46,6 +47,7 @@ const App = () => {
       alert("Ooops something went wrong:", error.message)
     }
   }
+
   const updateCat = async (editCat, id) => {
     try {
       const patchResponse = await fetch(`http://localhost:3000/cats/${id}`, {
@@ -64,9 +66,21 @@ const App = () => {
       alert("Ooops something went wrong:", error.message)
     }
   }
-  const deleteCat = (id) => {
-    console.log(id)
+
+  const deleteCat = async (id) => {
+    try {
+      const response = await fetch(`http://localhost:3000/cats/${id}`, {
+        method: "DELETE"
+      })
+      if (!response.ok) {
+        throw new Error("Error on cat delete request")
+      }
+      getCats()
+    } catch (error) {
+      alert("Oops something went wrong:", error.message)
+    }
   }
+
   return (
     <>
       <Header />
